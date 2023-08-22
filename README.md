@@ -16,7 +16,7 @@
 ## 1.4
 Пропущено название для docker_image. А так же в контейнере был указ название образа,вместо ссылки уже объявленного созданного ресурса-образа, ну и проблема с именем была.
 
-`
+``` GO
 resource "docker_image" **"nginx"**{
   name         = "nginx:latest"
   keep_locally = true
@@ -31,9 +31,9 @@ resource "docker_container" **"nginx_container"** {
     external = 8000
   }
 }
-`
+```
 ## 1.5
-CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                  NAMES
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                  NAMES 
 37d65c2185b0   eea7b3dcba7e   "/docker-entrypoint.…"   6 seconds ago   Up 5 seconds   0.0.0.0:8000->80/tcp   example_gcpBojbT9UNA3FZK
 
 ## 1.6
